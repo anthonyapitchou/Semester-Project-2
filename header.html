@@ -1,0 +1,145 @@
+<header class="w-full bg-white border-b border-gray-100">
+
+  <div class="max-w-6xl mx-auto h-16 px-6 flex items-center justify-between">
+
+    <!-- Logo -->
+    <a href="/home.html" aria-label="StudentBid home" class="flex items-center">
+      <img src="/src/assets/studentbid_logo_white_bg_v2.svg" alt="StudentBid" class="h-10 w-auto">
+    </a>
+
+    <!-- Desktop navigation -->
+    <nav class="hidden md:flex items-center gap-7" aria-label="Main navigation">
+
+      <a href="/home.html" class="text-sm text-gray-700font-medium hover:text-purple-800 transition">
+        Home
+      </a>
+
+      <a href="/product.html" class="text-sm text-gray-700 hover:text-purple-600 transition">
+        Product
+      </a>
+
+      <a href="/history.html" class="text-sm text-gray-700 hover:text-purple-600 transition">
+        History
+      </a>
+
+    <!-- Search -->
+<div class="flex items-center">
+
+    <button
+        id="search-button"
+        type="button"
+        aria-label="Search"
+        class="text-gray-700 hover:text-purple-600 transition"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            class="w-5 h-5"
+            aria-hidden="true"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+            />
+        </svg>
+    </button>
+
+    <input
+        id="header-search-input"
+        type="search"
+        placeholder="Search..."
+        class="hidden w-48 ml-2 px-3 py-2 text-sm border border-gray-300 rounded-lg"
+    >
+
+</div>
+      <!-- Shown when logged OUT -->
+      <div id="header-logged-out" class="flex items-center gap-4">
+        <a href="/login.html" class="px-4 py-1.5 rounded-full bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition">
+          Login
+        </a>
+        <a href="/register.html" class="text-sm text-gray-700 hover:text-purple-600 transition">
+          Register
+        </a>
+      </div>
+
+      <!-- Shown when logged IN -->
+      <div id="header-logged-in" class="hidden items-center gap-4">
+        <a href="/profile.html" aria-label="Profile" class="flex items-center">
+<img  id="header-profile-avatar"
+    src="/src/assets/profile.jpg"
+    alt="Profile"
+    class="w-9 h-9 rounded-full object-cover">
+          </a>
+     <div class="relative">
+
+  <button
+    id="user-menu-button"
+    type="button"
+    aria-label="Open user menu"
+    class="w-8 h-8 rounded-full bg-slate-900 flex items-center justify-center hover:bg-purple-600 transition"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="white"
+      stroke-width="2"
+      class="w-4 h-4"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </button>
+
+  <!-- User menu -->
+  <div
+    id="user-menu"
+    class="hidden absolute right-0 top-10 w-36 bg-[#111747] rounded-md shadow-lg py-2 z-50"
+  >
+
+    <a href="/edit-profile.html"
+      class="block px-4 py-2 text-xs text-white hover:bg-purple-600"
+    >
+      Edit Profile
+    </a>
+
+    <a
+      href="/create-list.html"
+      class="block px-4 py-2 text-xs text-white hover:bg-purple-600"
+    >
+      Create List
+    </a>
+
+    <button
+      id="logout-button"
+      type="button"
+      class="block w-full text-left px-4 py-2 text-xs text-red-400 hover:bg-purple-600"
+    >
+      Log Out
+    </button>
+
+  </div>
+
+
+      </div>
+
+    </nav>
+
+    <!-- Mobile menu -->
+    <button type="button" aria-label="Open navigation menu" class="md:hidden text-gray-700 hover:text-purple-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+  </div>
+
+</header>

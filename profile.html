@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - StudentBid</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- Header loaded from header.html -->
+  <div id="header-placeholder"></div>
+
+  <!-- Page content -->
+  <main class="flex-1 max-w-6xl mx-auto w-full">
+
+    <!-- Profile title -->
+    <section class="bg-[#111747] py-10 px-6">
+      <h1 class="text-3xl font-bold text-white">
+        Profile
+      </h1>
+    </section>
+
+
+    <!-- Profile information -->
+    <section class="px-6 py-10">
+
+      <div class="flex flex-col items-center text-center">
+
+        <!-- Avatar -->
+        <img
+          id="profile-avatar"
+          src="/src/assets/profile.jpg"
+          alt="Profile avatar"
+          class="w-24 h-24 rounded-full object-cover border border-gray-200"
+        >
+
+        <!-- Name -->
+        <h2
+          id="profile-name"
+          class="mt-4 text-xl font-bold text-gray-900"
+        >
+          Christian Henry
+        </h2>
+
+        <!-- Email -->
+        <p
+          id="profile-email"
+          class="mt-1 text-sm text-gray-500"
+        >
+          christian.henry@example.com
+        </p>
+
+        <!-- Credits -->
+        <p
+          id="profile-credits"
+          class="mt-2 text-sm font-semibold text-gray-700"
+        >
+          0 Credits
+        </p>
+
+        <!-- Logout -->
+        <button
+          id="profile-logout-button"
+          type="button"
+          class="mt-5 px-6 py-2 rounded-full bg-red-500 text-white text-sm font-semibold hover:bg-red-600 transition"
+        >
+          Logout
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200"></div>
+
+
+    <!-- My Listings -->
+    <section class="px-6 py-10">
+
+      <h2 class="text-xl font-bold text-gray-900 mb-6">
+        My Listings
+      </h2>
+
+      <div
+        id="profile-listings"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Listings will be rendered here by JavaScript -->
+      </div>
+
+    </section>
+
+
+    <!-- Divider -->
+    <div class="border-t border-gray-200"></div>
+
+
+    <!-- My Bids -->
+    <section class="px-6 py-10">
+
+      <h2 class="text-xl font-bold text-gray-900 mb-6">
+        My Bids
+      </h2>
+
+      <div class="overflow-x-auto">
+
+        <table class="w-full text-left border-collapse">
+
+          <thead>
+            <tr class="border-b border-gray-200">
+
+              <th class="py-4 px-4 text-sm font-semibold text-gray-700">
+                Product
+              </th>
+
+              <th class="py-4 px-4 text-sm font-semibold text-gray-700">
+                Your bid
+              </th>
+
+              <th class="py-4 px-4 text-sm font-semibold text-gray-700">
+                Current bid
+              </th>
+
+              <th class="py-4 px-4 text-sm font-semibold text-gray-700">
+                Status
+              </th>
+
+            </tr>
+          </thead>
+
+          <tbody id="profile-bids">
+            <!-- Bids will be rendered here by JavaScript -->
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer loaded from footer.html -->
+  <div id="footer-placeholder"></div>
+
+
+  <script type="module" src="/src/js/includes.js"></script>
+  <script type="module" src="/src/pages/profile.js"></script>
+
+</body>
+</html>

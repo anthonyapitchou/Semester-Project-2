@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentBid - Home</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section class="relative h-96 overflow-hidden1">
+
+            <img
+                id="hero-image"
+                src="/src/assets/savannah-bolton.jpg"
+                alt="Student auctions"
+                class="absolute inset-0 w-full h-full object-cover"
+            >
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative z-10 max-w-6xl mx-auto h-full px-6 flex items-center">
+
+                <div class="max-w-md text-white">
+
+                    <h1 class="text-3xl font-bold leading-tight">
+                        Discover, Bid, and
+                        <span class="text-blue-500">Win!</span>
+                    </h1>
+
+                    <p class="mt-2 text-sm leading-relaxed">
+                        Find unique items, place your bids, and discover
+                        great deals from fellow students.
+                    </p>
+
+                    <a
+                        href="/product.html"
+                        class="inline-block mt-4 px-4 py-2 rounded-full bg-blue-600
+                               text-white text-xs font-medium hover:bg-blue-700 transition"
+                    >
+                        Check Auctions
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Hero dots -->
+            <div class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+
+                <button
+                    type="button"
+                    class="hero-dot w-2 h-2 rounded-full bg-orange-500"
+                    aria-label="Slide 1">
+                </button>
+
+                <button
+                    type="button"
+                    class="hero-dot w-2 h-2 rounded-full bg-white"
+                    aria-label="Slide 2">
+                </button>
+
+                <button
+                    type="button"
+                    class="hero-dot w-2 h-2 rounded-full bg-white"
+                    aria-label="Slide 3">
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Listings -->
+        <section class="max-w-6xl mx-auto px-6 py-6">
+
+           <div class="mb-5">
+    <h2 class="text-lg font-semibold">
+        Listings
+    </h2>
+</div>
+
+
+            <!-- JavaScript will populate this -->
+            <div
+                id="home-listings"
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+                <!-- Listings populated by home.js -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+
+    <!-- Components -->
+    <script type="module" src="/src/js/includes.js"></script>
+    <script type="module" src="/src/pages/home.js"></script>
+
+</body>
+
+</html>

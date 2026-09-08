@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Profile - StudentBid</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+  <!-- Header loaded from header.html -->
+  <div id="header-placeholder"></div>
+
+  <!-- Page content -->
+  <main class="flex-1 max-w-3xl mx-auto w-full px-8 py-12">
+
+    <!-- Avatar + image actions -->
+   <div class="flex items-center gap-5 mb-7">
+
+  <img id="avatar-preview" src="/src/assets/profile.jpg" alt="Profile avatar"
+       class="w-16 h-16 rounded-full object-cover border border-gray-200" />
+
+  <input type="file" id="avatar-input" accept="image/*" class="hidden" />
+
+  <input
+    type="url"
+    id="avatar-url"
+    placeholder="Paste image URL"
+    class="border border-gray-300 rounded-lg px-3 py-2 text-sm"
+  />
+
+  <button type="button" id="upload-image-btn"
+    class="bg-purple-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-purple-700 transition">
+    Upload New Image
+  </button>
+
+  <button type="button" id="remove-image-btn"
+    class="bg-slate-900 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-slate-800 transition">
+    Remove Image
+  </button>
+
+</div>
+
+    <form id="profile-form" class="space-y-6">
+
+      <!-- Full name -->
+      <div>
+        <label for="full-name" class="block font-bold mb-2">Full Name</label>
+        <input type="text" id="full-name" required
+          class="w-full border border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+
+      <!-- Location -->
+      <fieldset>
+        <legend class="font-bold mb-2">Location</legend>
+
+        <div class="mb-4">
+          <label for="address-1" class="block text-sm font-semibold mb-1">Street Address 1</label>
+          <input type="text" id="address-1"
+            class="w-full border  border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+
+        <div class="mb-4">
+          <label for="address-2" class="block text-sm font-semibold mb-1">
+            Street Address 2 <span class="font-normal text-gray-400">(optional)</span>
+          </label>
+          <input type="text" id="address-2"
+            class="w-full border  border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+
+        <div class="mb-4">
+          <label for="county" class="block text-sm font-semibold mb-1">County</label>
+          <input type="text" id="county"
+            class="w-full border  border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="country" class="block text-sm font-semibold mb-1">Country</label>
+            <input type="text" id="country"
+              class="w-full border border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+          </div>
+          <div>
+            <label for="city" class="block text-sm font-semibold mb-1">City</label>
+            <input type="text" id="city"
+              class="w-full border border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Phone number -->
+      <div>
+        <label for="phone" class="block font-bold mb-2">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+44 70444437"
+          class="w-full border border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block font-bold mb-2">Email</label>
+        <input type="email" id="email" required
+          class="w-full border border-back rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+
+      <!-- Feedback message -->
+      <p id="profile-message" class="text-sm hidden"></p>
+
+      <button type="submit"
+        class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+        Save Changes
+      </button>
+
+    </form>
+
+  </main>
+
+  <!-- Footer loaded from footer.html -->
+  <div id="footer-placeholder"></div>
+
+  <script type="module" src="/src/js/includes.js"></script>
+  <script type="module" src="/src/pages/edit-profile.js"></script>
+</body>
+</html>
