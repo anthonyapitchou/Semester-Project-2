@@ -5,8 +5,12 @@ const profileName = document.getElementById('profile-name');
 const profileEmail = document.getElementById('profile-email');
 const profileCredits = document.getElementById('profile-credits');
 const profileListings = document.getElementById('profile-listings');
+const bidListings = document.getElementById('bid-listings');
 
 const token = localStorage.getItem('accessToken');
+
+console.log('PROFILE TOKEN:', token);
+
 
 
 // --------------------------------------------------
@@ -212,4 +216,24 @@ if (listingsResponse.ok) {
         'LISTINGS ERROR:',
         errorData
     );
+}
+
+// --------------------------------------------------
+// FETCH USER BIDS
+// --------------------------------------------------
+
+const bidListingsResponse = await fetch(
+    'https://v2.api.noroff.dev/auction/profiles/anthony86/bids?_listings=true',
+    {
+        method: 'GET',
+        headers
+    }
+);
+
+if (bidListingsResponse.ok) {
+
+    const bidListingsData = await bidListingsResponse.json();
+
+console.log('MY BIDS:', JSON.stringify(bidListingsData, null, 2));
+
 }

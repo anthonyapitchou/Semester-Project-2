@@ -22,6 +22,9 @@
         History
       </a>
 
+
+
+
     <!-- Search -->
 <div class="flex items-center">
 
@@ -68,12 +71,18 @@
 
       <!-- Shown when logged IN -->
       <div id="header-logged-in" class="hidden items-center gap-4">
-        <a href="/profile.html" aria-label="Profile" class="flex items-center">
-<img  id="header-profile-avatar"
-    src="/src/assets/profile.jpg"
-    alt="Profile"
-    class="w-9 h-9 rounded-full object-cover">
-          </a>
+
+<a href="/profile.html" aria-label="Profile" class="flex items-center">
+    <img
+        id="header-profile-avatar"
+        src="/src/assets/profile.jpg"
+        alt="Profile"
+        class="w-9 h-9 rounded-full object-cover"
+    >
+</a>
+
+<div class="relative">
+
      <div class="relative">
 
   <button
@@ -100,10 +109,11 @@
   </button>
 
   <!-- User menu -->
-  <div
-    id="user-menu"
-    class="hidden absolute right-0 top-10 w-36 bg-[#111747] rounded-md shadow-lg py-2 z-50"
-  >
+  <div id="user-menu" class="hidden absolute right-0 top-10 w-36 bg-[#111747] rounded-md shadow-lg py-2 z-50">
+
+    <div id="header-credits" class="px-4 py-2 text-xs text-gray-300">
+    Credits: 0
+</div>
 
     <a href="/edit-profile.html"
       class="block px-4 py-2 text-xs text-white hover:bg-purple-600"

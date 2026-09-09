@@ -81,6 +81,7 @@ navLinks.forEach(link => {
         const loggedOut = document.getElementById('header-logged-out');
         const loggedIn = document.getElementById('header-logged-in');
         const logoutButton = document.getElementById('logout-button');
+        const headerCredits = document.getElementById('header-credits')
 
 
         if (token) {
@@ -114,6 +115,7 @@ navLinks.forEach(link => {
         const data = await response.json();
 
     console.log(data);
+    
 
         const avatar = document.getElementById('header-profile-avatar');
 
@@ -121,12 +123,15 @@ navLinks.forEach(link => {
             avatar.src = data.data.avatar.url;
     
             }
+
+            if (headerCredits) {
+    headerCredits.textContent = `Credits: ${data.data.credits}`;
+}
         }
     }
 }
 }
-
-
+        
    
 
 

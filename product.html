@@ -154,37 +154,80 @@
 
 
         <!-- Description -->
-        <section class="mt-10">
+<!-- Description -->
+<section class="mt-10">
 
-            <h2 class="text-xl font-bold text-gray-900 mb-3">
-                Description
-            </h2>
+    <h2 class="text-xl font-bold text-gray-900 mb-3">
+        Description
+    </h2>
 
-            <p
-                id="product-description"
-                class="text-sm text-gray-600 leading-relaxed"
+    <p
+        id="product-description"
+        class="text-sm text-gray-600 leading-relaxed"
+    >
+    </p>
+
+</section>
+
+<!-- Bid history -->
+<section class="mt-12">
+      <h2 class="text-xl font-bold text-gray-900 mb-6">
+        Explore more
+    </h2>
+
+    <div
+        id="explore-more"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
+    </div>
+
+    <h2 class="text-xl font-bold text-gray-900 mb-4">
+        Bid history
+    </h2>
+
+    <div class="overflow-x-auto rounded-lg border border-gray-200">
+
+        <table class="w-full text-sm">
+
+            <thead class="bg-[#111747] text-white">
+
+                <tr>
+                    <th class="px-4 py-3 text-left">
+                        Bidder
+                    </th>
+
+                    <th class="px-4 py-3 text-left">
+                        Amount
+                    </th>
+
+                    <th class="px-4 py-3 text-left">
+                        Date
+                    </th>
+                </tr>
+
+            </thead>
+
+            <tbody
+                id="bid-history"
+                class="divide-y divide-gray-200"
             >
-            </p>
+            </tbody>
 
-        </section>
+        </table>
 
+    </div>
 
-        <!-- Explore more -->
-        <section class="mt-12">
+    <p
+        id="bid-history-empty"
+        class="hidden text-sm text-gray-500 mt-4"
+    >
+        No bids yet.
+    </p>
 
-            <h2 class="text-xl font-bold text-gray-900 mb-6">
-                Explore more
-            </h2>
+    <tbody id="bid-history">
+        
 
-            <div
-                id="explore-more"
-                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-                <!-- Related listings populated by product.js -->
-            </div>
-
-        </section>
-
+</section>
     </main>
 
 
