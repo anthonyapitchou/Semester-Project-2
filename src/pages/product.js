@@ -154,9 +154,15 @@ productDescription.textContent = data.data.description || '';
 
     })();
 }
+const token = localStorage.getItem('accessToken');
 
 bidForm.addEventListener('submit', async (event) => {
     event.preventDefault();
+
+    if (!token) {
+        window.location.href = '/Semester-Project-2/login.html';
+        return;
+    }
 
     const amount = Number(bidAmount.value);
 
@@ -165,7 +171,6 @@ bidForm.addEventListener('submit', async (event) => {
         {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
     'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW50aG9ueTg2IiwiZW1haWwiOiJhbnRob255LmFwaUBzdHVkLm5vcm9mZi5ubyIsImlhdCI6MTc4Nzc1MTk5MX0.pBk30AYhdVwQFdv5oe-FfpCRioU1E0Uad6-nYHQ1aEM',
     'X-Noroff-API-Key': 'c87c2791-c851-4066-9044-070f941de43d'
             },
