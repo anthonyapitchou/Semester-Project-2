@@ -18,7 +18,7 @@ const token = localStorage.getItem('accessToken');
 // --------------------------------------------------
 
 if (!token) {
-    window.location.href = '/login.html';
+    window.location.href = '/Semester-Project-2/login.html';
 }
 
 
