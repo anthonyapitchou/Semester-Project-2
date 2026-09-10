@@ -135,6 +135,6 @@ navLinks.forEach(link => {
    
 
 
-loadComponent("header-placeholder", "/header.html");
+loadComponent("header-placeholder", "./header.html");
 
-loadComponent("footer-placeholder", "/footer.html");
+loadComponent("footer-placeholder", "./footer.html");
