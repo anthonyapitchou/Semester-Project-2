@@ -154,7 +154,7 @@ productDescription.textContent = data.data.description || '';
 
     })();
 }
-const token = localStorage.getItem('accessToken');
+
 
 bidForm.addEventListener('submit', async (event) => {
     event.preventDefault();
