@@ -17,7 +17,7 @@ console.log('PROFILE TOKEN:', token);
 // --------------------------------------------------
 
 if (!token) {
-    window.location.href = '/login.html';
+    window.location.href = '/Semester-Project-2/login.html';
 }
 
 
@@ -61,7 +61,7 @@ if (response.ok) {
     if (data.data.avatar?.url) {
         profileAvatar.src = data.data.avatar.url;
     } else {
-        profileAvatar.src = '/src/assets/profile.jpg';
+        profileAvatar.src = './src/assets/profile.jpg';
     }
 
 } else {
@@ -149,7 +149,7 @@ if (listingsResponse.ok) {
             );
 
             window.location.href =
-                `/create-list.html?id=${listingId}`;
+                `/Semester-Project-2/create-list.html?id=${listingId}`;
         });
     });
 

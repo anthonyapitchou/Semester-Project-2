@@ -55,7 +55,7 @@ console.log('SEARCH INPUT:', searchInput);
 
         if (event.key === 'Enter') {
 
-window.location.href = `/search.html?query=${searchInput.value}`;
+window.location.href = `/Semester-Project-2/search.html?query=${searchInput.value}`;
 
         }
 
@@ -92,7 +92,7 @@ navLinks.forEach(link => {
             if (logoutButton) {
     logoutButton.addEventListener('click', () => {
         localStorage.removeItem('accessToken');
-        window.location.href = '/home.html';
+        window.location.href = '/Semester-Project-2/home.html';
     });
 }
 

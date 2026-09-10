@@ -219,7 +219,7 @@ createListingForm.addEventListener('submit', async (event) => {
 
                 setTimeout(() => {
 
-                    window.location.href = '/profile.html';
+                    window.location.href = '/Semester-Project-2/profile.html';
 
                 }, 1000);
             }
