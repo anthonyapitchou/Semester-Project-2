@@ -51,7 +51,7 @@ console.log('SEARCH INPUT:', searchInput);
 
     });
 
-}    searchInput.addEventListener('keydown', (event) => {
+    searchInput.addEventListener('keydown', (event) => {
 
         if (event.key === 'Enter') {
 
@@ -60,6 +60,19 @@ window.location.href = `/Semester-Project-2/search.html?query=${searchInput.valu
         }
 
     });
+            if (searchButton && searchInput) {
+    searchButton.addEventListener('click', () => {
+        console.log('SEARCH CLIQUÉ');
+        searchInput.classList.remove('hidden');
+        searchInput.focus();
+    });
+
+    searchInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            window.location.href = `./search.html?query=${searchInput.value}`;
+        }
+    });
+}
 
     // Highlight the current page in the navigation
 const currentPage = window.location.pathname;
