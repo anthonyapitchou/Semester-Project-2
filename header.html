@@ -143,13 +143,41 @@
     </nav>
 
 
-    <!-- Mobile menu -->
-<button id="mobile-menu-button" aria-label="Open navigation menu" class="md:hidden text-gray-700 hover:text-purple-600 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-6 h-6" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
+<!-- Mobile menu -->
+<button
+    id="mobile-menu-button"
+    type="button"
+    aria-label="Open navigation menu"
+    class="md:hidden text-gray-700 hover:text-purple-600 transition"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        class="w-6 h-6"
+        aria-hidden="true"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+        />
+    </svg>
+</button>
 
-  </div>
+<div id="mobile-menu" class="hidden md:hidden">
+    <nav
+        aria-label="Mobile navigation"
+        class="flex flex-col gap-4 px-6 py-4"
+    >
+        <a href="/Semester-Project-2/home.html">Home</a>
+        <a href="/Semester-Project-2/product.html">Product</a>
+        <a href="/Semester-Project-2/history.html">History</a>
+        <a href="/Semester-Project-2/login.html">Login</a>
+        <a href="/Semester-Project-2/register.html">Register</a>
+    </nav>
+</div>
 
 </header>
