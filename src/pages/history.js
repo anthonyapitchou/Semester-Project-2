@@ -38,7 +38,7 @@ historyElement.innerHTML = `
             >
 
             <a
-                href="/product.html?id=${item.id}"
+                href="/Semester-Project-2/product.html?id=${item.id}"
                 class="font-semibold text-gray-900 hover:text-purple-600"
             >
                 ${item.title}
@@ -64,7 +64,7 @@ historyElement.innerHTML = `
 
     <td class="px-4 py-3 text-center">
         <a
-            href="/product.html?id=${item.id}"
+            href="/Semester-Project-2/product.html?id=${item.id}"
             class="text-purple-600 hover:text-purple-800 font-semibold"
         >
             View
@@ -77,7 +77,7 @@ historyElement.innerHTML = `
 
 const token = localStorage.getItem('accessToken');
 if (!token) {
-    window.location.href = '/login.html';
+    window.location.href = '/Semester-Project-2/login.html';
 } else {
 
 
