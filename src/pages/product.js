@@ -43,25 +43,21 @@ if (exploreResponse.ok) {
     console.log('Explore more data:', exploreData);
 
    exploreData.data.forEach(listing => {
-
-    exploreMore.innerHTML += `
-        <a
-            href="/Semester-Project-2/product.html?id=${listing.id}"
-            class="block"
+exploreMore.innerHTML += `
+    <a
+        href="/Semester-Project-2/product.html?id=${listing.id}"
+        class="block"
+    >
+        <img
+            src="${listing.media?.[0]?.url || ''}"
+            alt="${listing.media?.[0]?.alt || listing.title}"
+            class="w-full h-48 object-cover rounded-lg"
         >
-
-            <img
-                src="${listing.media?.[0]?.url || ''}"
-                alt="${listing.media?.[0]?.alt || listing.title}"
-                class="w-full h-48 object-cover rounded-lg"
-            >
-
-            <h3 class="mt-3 font-semibold">
-                ${listing.title}
-            </h3>
-
-        </a>
-    `;
+        <h3 class="mt-3 font-semibold">
+            ${listing.title}
+        </h3>
+    </a>
+`;
     });
 }
 
