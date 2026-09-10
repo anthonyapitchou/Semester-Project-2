@@ -23,8 +23,9 @@ Registered students (with a `@stud.noroff.no` email) can create listings, place 
 ## 🚀 Live Demo
 
 ## 🎨 Design
-[Link to Figma]
+[[Link to Figma]]
+(https://www.figma.com/design/SvMvq7RTN79eP4fdXTakHU/Semester-Project-2?node-id=321-1456&t=3PeM98qWs4TrkQYN-1)
 
 ## 📋 Project Management
-[Link to website]
-
+[[Link to website]
+](https://anthonyapitchou.github.io/Semester-Project-2/home.html)
