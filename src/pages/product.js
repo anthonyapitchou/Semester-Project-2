@@ -46,7 +46,7 @@ if (exploreResponse.ok) {
 
     exploreMore.innerHTML += `
         <a
-            href="/product.html?id=${listing.id}"
+            href="/Semester-Project-2/product.html?id=${listing.id}"
             class="block"
         >
 
