@@ -5,8 +5,7 @@ const profileName = document.getElementById('profile-name');
 const profileEmail = document.getElementById('profile-email');
 const profileCredits = document.getElementById('profile-credits');
 const profileListings = document.getElementById('profile-listings');
-const bidListings = document.getElementById('bid-listings');
-
+const bidListings = document.getElementById('profile-bids');
 const token = localStorage.getItem('accessToken');
 
 console.log('PROFILE TOKEN:', token);
@@ -234,6 +233,32 @@ if (bidListingsResponse.ok) {
 
     const bidListingsData = await bidListingsResponse.json();
 
-console.log('MY BIDS:', JSON.stringify(bidListingsData, null, 2));
+    console.log('MY BIDS:', JSON.stringify(bidListingsData, null, 2));
+
+    bidListingsData.data.forEach(bid => {
+
+        const bidElement = document.createElement('tr');
+
+        bidElement.innerHTML = `
+            <td class="px-4 py-3">
+                ${bid.listing.title}
+            </td>
+
+            <td class="px-4 py-3 font-semibold">
+                ${bid.amount} credits
+            </td>
+
+            <td class="px-4 py-3">
+                ${bid.amount} credits
+            </td>
+
+            <td class="px-4 py-3">
+                Active
+            </td>
+        `;
+
+        bidListings.appendChild(bidElement);
+
+    });
 
 }
