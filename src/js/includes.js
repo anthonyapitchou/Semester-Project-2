@@ -28,18 +28,20 @@ async function loadComponent(placeholderId, filePath) {
         console.log('SEARCH INPUT:', searchInput);
 
 
-        // User menu
-        if (userMenuButton && userMenu) {
+    
+   // Mobile menu
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
 
-            userMenuButton.addEventListener('click', () => {
+if (mobileMenuButton && mobileMenu) {
 
-                console.log('BOUTON CLIQUÉ');
+    mobileMenuButton.addEventListener('click', () => {
 
-                userMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
 
-            });
+    });
 
-        }
+}
 
 
         // Search
