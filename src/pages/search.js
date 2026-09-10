@@ -66,7 +66,7 @@ const renderListings = (listings) => {
         const listingElement = document.createElement('div');
 
         listingElement.innerHTML = `
-           <a href="/product.html?id=${listing.id}" class="block">
+           <a href="/Semester-Project-2/product.html?id=${listing.id}" class="block">
            
         <img
             src="${listing.media?.[0]?.url || ''}"

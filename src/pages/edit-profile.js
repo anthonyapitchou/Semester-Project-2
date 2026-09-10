@@ -18,7 +18,7 @@ const token = localStorage.getItem('accessToken');
 // --------------------------------------------------
 
 if (!token) {
-    window.location.href = '/login.html';
+    window.location.href = '/Semester-Project-2/login.html';
 }
 
 
@@ -33,7 +33,7 @@ uploadImageBtn.addEventListener('click', () => {
 });
 
 removeImageBtn.addEventListener('click', () => {
-    avatarPreview.src = '/src/assets/profile.jpg';
+    avatarPreview.src = './src/assets/profile.jpg';
     avatarInput.value = '';
 });
 
@@ -64,7 +64,7 @@ if (response.ok) {
     if (data.data.avatar?.url) {
         avatarPreview.src = data.data.avatar.url;
     } else {
-        avatarPreview.src = '/src/assets/profile.jpg';
+        avatarPreview.src = './src/assets/profile.jpg';
     }
 
     console.log('Profile data populated successfully');
