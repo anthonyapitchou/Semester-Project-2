@@ -25,7 +25,7 @@ if (response.ok) {
     console.log('Login successful:', data);
 
     localStorage.setItem('accessToken', data.data.accessToken);
-    window.location.href = 'http://localhost:5173/home.html';
+    window.location.href = '/Semester-Project-2/home.html';
 
 
 
