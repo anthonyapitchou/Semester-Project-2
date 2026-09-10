@@ -122,8 +122,8 @@ async function loadComponent(placeholderId, filePath) {
                 'https://v2.api.noroff.dev/auction/profiles/anthony86',
                 {
                     headers: {
-                        'Authorization': 'Bearer code',
-                        'X-Noroff-API-Key': 'code'
+                    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYW50aG9ueTg2IiwiZW1haWwiOiJhbnRob255LmFwaUBzdHVkLm5vcm9mZi5ubyIsImlhdCI6MTc4Nzc1MTk5MX0.pBk30AYhdVwQFdv5oe-FfpCRioU1E0Uad6-nYHQ1aEM',
+        'X-Noroff-API-Key': 'c87c2791-c851-4066-9044-070f941de43d'
                     }
                 }
             );
